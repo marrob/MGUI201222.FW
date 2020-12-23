@@ -11,6 +11,7 @@
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/Button.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
 
 class MainViewBase : public touchgfx::View<MainPresenter>
 {
@@ -47,6 +48,7 @@ protected:
     touchgfx::TextAreaWithOneWildcard countTxt;
     touchgfx::Button buttonUp;
     touchgfx::Button buttonDown;
+    touchgfx::TextArea textArea1;
 
     /*
      * Wildcard Buffers

@@ -28,8 +28,8 @@
             "RelativeFilename": "bg.png",
             "Alpha": 255,
             "Name": "backgroundImage",
-            "X": 0,
-            "Y": 0,
+            "X": 261,
+            "Y": 157,
             "Width": 480,
             "Height": 272,
             "Visible": true,
@@ -44,8 +44,8 @@
             "RelativeFilename": "counter_box.png",
             "Alpha": 255,
             "Name": "counterBackgroundImage",
-            "X": 293,
-            "Y": 59,
+            "X": 790,
+            "Y": 382,
             "Width": 152,
             "Height": 154,
             "Visible": true,
@@ -73,8 +73,8 @@
               "BufferSize": 3
             },
             "Name": "countTxt",
-            "X": 293,
-            "Y": 87,
+            "X": 801,
+            "Y": 415,
             "Width": 152,
             "Height": 89,
             "Visible": true,
@@ -91,7 +91,7 @@
             "Alpha": 255,
             "Name": "buttonUp",
             "X": 52,
-            "Y": 59,
+            "Y": 87,
             "Width": 130,
             "Height": 56,
             "Visible": true,
@@ -111,6 +111,30 @@
             "Y": 157,
             "Width": 130,
             "Height": 56,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId2",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 183,
+              "Green": 201,
+              "Blue": 43
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textArea1",
+            "X": 316,
+            "Y": 247,
+            "Width": 392,
+            "Height": 92,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,
@@ -158,6 +182,10 @@
       },
       {
         "TextEntryId": "SingleUseId1",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId2",
         "IsResource": false
       }
     ],

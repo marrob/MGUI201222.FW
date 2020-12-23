@@ -231,8 +231,8 @@ source_files := $(call find, $(source_paths),*.cpp)
 board_c_files :=
 
 board_c_files := \
+	$(Drivers_path)/Components/ft5336/ft5336.c
 #	$(Drivers_path)/BSP/stm32746g_discovery_qspi.c \
-#	$(Drivers_path)/Components/ft5336/ft5336.c
 
 board_cpp_files :=
 
