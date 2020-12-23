@@ -10,8 +10,8 @@
     },
     "AvailableResolutions" : [
       {
-        "Width": 480,
-        "Height": 272
+        "Width": 1024,
+        "Height": 600
       }
     ],
     "PostGenerateTargetCommand" : "touchgfx update_project --project-file=../MGUI201222.FW.ioc --platform=m7",

@@ -4,8 +4,8 @@
 #ifndef SIMCONSTANTS_HPP
 #define SIMCONSTANTS_HPP
 
-static unsigned short SIM_WIDTH = 480;
-static unsigned short SIM_HEIGHT = 272;
+static unsigned short SIM_WIDTH = 1024;
+static unsigned short SIM_HEIGHT = 600;
 #define SIM_TITLE "MGUI201222.FW"
 
 #endif // SIMCONSTANTS_HPP

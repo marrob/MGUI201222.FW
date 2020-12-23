@@ -10,7 +10,7 @@ MainViewBase::MainViewBase() :
     buttonCallback(this, &MainViewBase::buttonCallbackHandler)
 {
 
-    __background.setPosition(0, 0, 480, 272);
+    __background.setPosition(0, 0, 1024, 600);
     __background.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
 
     backgroundBox.setPosition(0, 0, 800, 480);
