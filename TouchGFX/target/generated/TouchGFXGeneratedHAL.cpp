@@ -25,10 +25,9 @@
 
 using namespace touchgfx;
 
-namespace
-{
-static uint16_t lcd_int_active_line;
-static uint16_t lcd_int_porch_line;
+namespace {
+    static uint16_t lcd_int_active_line;
+    static uint16_t lcd_int_porch_line;
 }
 
 void TouchGFXGeneratedHAL::initialize()
@@ -83,17 +82,17 @@ void TouchGFXGeneratedHAL::setTFTFrameBuffer(uint16_t* adr)
 
 void TouchGFXGeneratedHAL::flushFrameBuffer(const touchgfx::Rect& rect)
 {
-    HAL::flushFrameBuffer(rect);
+  HAL::flushFrameBuffer(rect);
 }
 
 bool TouchGFXGeneratedHAL::blockCopy(void* RESTRICT dest, const void* RESTRICT src, uint32_t numBytes)
 {
-    return HAL::blockCopy(dest, src, numBytes);
+  return HAL::blockCopy(dest, src, numBytes);
 }
 
 extern "C"
 {
-    void HAL_LTDC_LineEventCallback(LTDC_HandleTypeDef* hltdc)
+    void HAL_LTDC_LineEventCallback(LTDC_HandleTypeDef *hltdc)
     {
         if (LTDC->LIPCR == lcd_int_active_line)
         {
