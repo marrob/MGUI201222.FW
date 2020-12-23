@@ -17,7 +17,7 @@ MainViewBase::MainViewBase() :
     backgroundBox.setVisible(false);
     backgroundBox.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
 
-    backgroundImage.setXY(261, 157);
+    backgroundImage.setXY(117, 246);
     backgroundImage.setBitmap(touchgfx::Bitmap(BITMAP_BG_ID));
 
     counterBackgroundImage.setXY(790, 382);
@@ -30,18 +30,25 @@ MainViewBase::MainViewBase() :
     countTxt.setWildcard(countTxtBuffer);
     countTxt.setTypedText(touchgfx::TypedText(T_TEXTID1));
 
-    buttonUp.setXY(52, 87);
+    buttonUp.setXY(175, 354);
     buttonUp.setBitmaps(touchgfx::Bitmap(BITMAP_UP_BTN_ID), touchgfx::Bitmap(BITMAP_UP_BTN_PRESSED_ID));
     buttonUp.setAction(buttonCallback);
 
-    buttonDown.setXY(52, 157);
+    buttonDown.setXY(175, 431);
     buttonDown.setBitmaps(touchgfx::Bitmap(BITMAP_DOWN_BTN_ID), touchgfx::Bitmap(BITMAP_DOWN_BTN_PRESSED_ID));
     buttonDown.setAction(buttonCallback);
 
-    textArea1.setXY(316, 247);
-    textArea1.setColor(touchgfx::Color::getColorFrom24BitRGB(183, 201, 43));
-    textArea1.setLinespacing(0);
-    textArea1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID2));
+    image1.setXY(117, 232);
+    image1.setBitmap(touchgfx::Bitmap(BITMAP_CA_LOGO_480X72_ID));
+
+    imageProgress1.setXY(265, 199);
+    imageProgress1.setProgressIndicatorPosition(2, 2, 180, 16);
+    imageProgress1.setRange(0, 100);
+    imageProgress1.setDirection(touchgfx::AbstractDirectionProgress::RIGHT);
+    imageProgress1.setBackground(touchgfx::Bitmap(BITMAP_BLUE_PROGRESSINDICATORS_BG_MEDIUM_PROGRESS_INDICATOR_BG_SQUARE_0_DEGREES_ID));
+    imageProgress1.setBitmap(BITMAP_BLUE_PROGRESSINDICATORS_FILL_TILING_PROGRESS_INDICATOR_FILL_STRIPED_NORMAL_HORIZONTAL_ID);
+    imageProgress1.setValue(60);
+    imageProgress1.setAnchorAtZero(false);
 
     add(__background);
     add(backgroundBox);
@@ -50,7 +57,8 @@ MainViewBase::MainViewBase() :
     add(countTxt);
     add(buttonUp);
     add(buttonDown);
-    add(textArea1);
+    add(image1);
+    add(imageProgress1);
 }
 
 void MainViewBase::setupScreen()
