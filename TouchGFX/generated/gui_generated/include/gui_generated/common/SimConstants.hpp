@@ -6,6 +6,6 @@
 
 static unsigned short SIM_WIDTH = 480;
 static unsigned short SIM_HEIGHT = 272;
-#define SIM_TITLE "STM32F746G_DISCO"
+#define SIM_TITLE "MGUI201222.FW"
 
 #endif // SIMCONSTANTS_HPP
